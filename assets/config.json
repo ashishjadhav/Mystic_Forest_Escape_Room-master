@@ -1,0 +1,8 @@
+{
+    "name": "Mystic Forest",
+    "id": "mystic-forest",
+    "background-image": "mystic-forest.jpg",
+    "api-url": "http://localhost:5005",
+    "welcome-message": "Hi.",
+    "escape_room_name"	: "Mystic Forest"
+}

@@ -1,0 +1,472 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - good morning
+      - good evening
+      - good afternoon
+
+  - intent: affirm
+    examples: |
+      - yess
+      - y
+      - s
+      - ss
+      - yes
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - yeah
+      - bitte
+      - start
+
+  - intent: ok
+    examples: |
+      - k
+      - ok
+      - okay
+      - okz
+      - okki
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - nah
+      - nope
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: look
+    examples: |
+      - look at the [tree](object)
+      - look at [tree](object)
+      - i want to look at the [tree](object)
+      - check the [tree](object)
+      - peek at [tree](object)
+      - watch the [tree](object)
+      - glance at the [tree](object)
+      - walk to the [tree](object)
+      - go to the [tree](object)
+      - look at the [trees](object)
+      - i want to look at the [trees](object)
+      - check the [trees](object)
+      - peek at [trees](object)
+      - watch the [trees](object)
+      - glance at the [trees](object)
+      - walk to the [trees](object)
+      - go to the [trees](object)
+      - look at the  [forest](object)
+      - look around [mountain](object)
+      - look around [river](object)
+      - look around [trees](object)
+      - look around [mountains](object)
+      - look into the [forest](object)
+      - look at [forest](object)
+      - i want to look at the [forest](object)
+      - check the [forest](object)
+      - peek at [forest](object)
+      - watch the [forest](object)
+      - glance at the [forest](object)
+      - look at the [forest](object)
+      - Can I look at the [forest](object)?
+      - inspect the [forest](object)
+      - look around the [forest](object)
+      - look at [cave](object)
+      - look at the [cave](object)
+      - walk to the [cave](object)
+      - go to the [cave](object)
+      - look at the [cave](object)
+      - i want to look at the [cave](object)
+      - check the [cave](object)
+      - peek at [cave](object)
+      - watch the [cave](object)
+      - glance at the [cave](object)
+      - look around the [burrow](object)
+      - look at the [burrow](object)
+      - walk to the [burrow](object)
+      - go to the [burrow](object)
+      - look at [burrow](object)
+      - i want to look at the [burrow](object)
+      - check the [burrow](object)
+      - peek at [burrow](object)
+      - watch the [burrow](object)
+      - glance at the [burrow](object)
+      - walk to the [burrow](object)
+      - go to the [burrow](object)
+      - look around the [burrows](object)
+      - look at the [burrows](object)
+      - walk to the [burrows](object)
+      - go to the [burrows](object)
+      - look at [burrows](object)
+      - i want to look at the [burrows](object)
+      - check the [burrows](object)
+      - peek at [burrows](object)
+      - watch the [burrows](object)
+      - glance at the [burrows](object)
+      - walk to the [burrows](object)
+      - go to the [burrows](object)
+      - look at [rock](object)
+      - i want to look at the [rock](object)
+      - check the [rock](object)
+      - peek at [rock](object)
+      - watch the [rock](object)
+      - glance at the [rock](object)
+      - look at the [rock](object)
+      - walk to the [rock](object)
+      - go to the [rock](object)
+      - look at [rocks](object)
+      - i want to look at the [rocks](object)
+      - check the [rocks](object)
+      - peek at [rocks](object)
+      - watch the [rocks](object)
+      - glance at the [rocks](object)
+      - look at the [rocks](object)
+      - walk to the [rocks](object)
+      - go to the [rocks](object)
+      - look at [rocks](object)
+      - i want to look at the [rocks](object)
+      - check the [rocks](object)
+      - peek at [rocks](object)
+      - watch the [rocks](object)
+      - glance at the [rocks](object)
+      - look at the [rocks](object)
+      - walk to the [rocks](object)
+      - go to the [rocks](object)
+      - look at [chockstone](object)
+      - i want to look at the [chockstone](object)
+      - check the [chockstone](object)
+      - peek at [chockstone](object)
+      - watch the [chockstone](object)
+      - glance at the [chockstone](object)
+      - look at the [chockstone](object)
+      - walk to the [chockstone](object)
+      - go to the [chockstone](object)
+      - look at [chockstones](object)
+      - i want to look at the [chockstones](object)
+      - check the [chockstones](object)
+      - peek at [chockstones](object)
+      - watch the [chockstones](object)
+      - glance at the [chockstones](object)
+      - look at the [chockstones](object)
+      - walk to the [chockstones](object)
+      - go to the [chockstones](object)
+      - look at [mountain](object)
+      - i want to look at the [mountain](object)
+      - check the [mountain](object)
+      - peek at [mountain](object)
+      - watch the [mountain](object)
+      - glance at the [mountain](object)
+      - look at the [mountain](object)
+      - walk to the [mountain](object)
+      - go to the [mountain](object)
+      - look at [mountains](object)
+      - i want to look at the [mountains](object)
+      - check the [mountains](object)
+      - peek at [mountains](object)
+      - watch the [mountains](object)
+      - glance at the [mountains](object)
+      - look at the [mountains](object)
+      - walk to the [mountains](object)
+      - go to the [mountains](object)
+      - look at [river](object)
+      - i want to look at the [river](object)
+      - check the [river](object)
+      - peek at [river](object)
+      - watch the [river](object)
+      - glance at the [river](object)
+      - look at the [river](object)
+      - walk to the [river](object)
+      - go to the [river](object)
+      - look at [bridge](object)
+      - i want to look at the [bridge](object)
+      - check the [bridge](object)
+      - peek at [bridge](object)
+      - watch the [bridge](object)
+      - glance at the [bridge](object)
+      - walk to the [bridge](object)
+      - go to the [bridge](object)
+      - look at the [bridge](object)
+      - look at [locked bridge](object)
+      - i want to look at the [locked bridge](object)
+      - check the [locked bridge](object)
+      - peek at [locked bridge](object)
+      - watch the [locked bridge](object)
+      - glance at the [locked bridge](object)
+      - walk to the [locked bridge](object)
+      - go to the [locked bridge](object)
+      - look at the [locked bridge](object)
+      - i want to look at the [sand](object)
+      - check the [sand](object)
+      - peek at [sand](object)
+      - watch the [sand](object)
+      - glance at the [sand](object)
+      - look at [sand](object)
+      - walk to the [bridge](object)
+      - go to the [bridge](object)
+      - look at the [bridge](object)
+      - look at [shell](object)
+      - i want to look at the [shell](object)
+      - check the [shell](object)
+      - peek at [shell](object)
+      - watch the [shell](object)
+      - glance at the [shell](object)
+      - walk to the [shell](object)
+      - go to the [shell](object)
+      - look at the [shell](object)
+      - look at [shells](object)
+      - i want to look at the [shells](object)
+      - check the [shells](object)
+      - peek at [shells](object)
+      - watch the [shells](object)
+      - glance at the [shells](object)
+      - walk to the [shells](object)
+      - go to the [shells](object)
+      - look at the [shells](object)
+      - [tree](object)
+      - [trees](object)
+      - [forest](object)
+      - [cave](object)
+      - [caves](object)
+      - [burrow](object)
+      - [burrows](object)
+      - [rock](object)
+      - [rocks](object)
+      - [chockstone](object)
+      - [chockstones](object)
+      - [mountain](object)
+      - [mountains](object)
+      - [river](object)
+      - [bridge](object)
+      - [sand](object)
+      - [shell](object)
+      - [shells](object)
+
+  - intent: pickup
+    examples: |
+      - pick up the [key](object)
+      - select [key](object)
+      - select the [key](object)
+      - take [key](object)
+      - take the [key](object)
+      - pick [key](object)
+      - pick the [key](object)
+      - collect up the [key](object)
+      - take up the [key](object)
+      - snag the [key](object)
+      - grab the [key](object)
+      - seize the [key](object)
+      - pick up the [torch](object)
+      - pick the [torch](object)
+      - pick up the [torch](object)
+      - select [torch](object)
+      - select the [torch](object)
+      - take [torch](object)
+      - take the [torch](object)
+      - collect up the [torch](object)
+      - take up the [torch](object)
+      - snag the [torch](object)
+      - grab the [torch](object)
+      - seize the [torch](object)
+      - pick up the [rope](object)
+      - select [rope](object)
+      - select the [rope](object)
+      - take [rope](object)
+      - take the [rope](object)
+      - pick the [rope](object)
+      - collect up the [rope](object)
+      - take up the [rope](object)
+      - snag the [rope](object)
+      - grab the [rope](object)
+      - seize the [rope](object)
+      - pick up the [sword](object)
+      - pick the [sword](object)
+      - select [sword](object)
+      - select the [sword](object)
+      - take [sword](object)
+      - take the [sword](object)
+      - collect up the [sword](object)
+      - take up the [sword](object)
+      - snag the [sword](object)
+      - grab the [sword](object)
+      - seize the [sword](object)
+      - [key](object)
+      - [torch](object)
+      - [rope](object)
+
+  - intent: use
+    examples: |
+      - open the [tree](object)
+      - lets open the [tree](object)
+      - open the [rocks](object)
+      - lets open the [rocks](object)
+      - open the [sand](object)
+      - lets open the [sand](object)
+      - open the [key](object)
+      - lets open the [key](object)
+      - open the [torch](object)
+      - lets open the [torch](object)
+      - open the [rope](object)
+      - lets open the [rope](object)
+      - open the [sword](object)
+      - lets open the [sword](object)
+      - apply the [sword](object)
+      - lets apply the [sword](object)
+      - combine the [torch](object) with the [tree](object)
+      - combine the [rope](object) with the [rock](object)
+      - combine the [key](object) with the [sand](object)
+      - combine the [torch](object) with the [cave](object)
+      - combine the [rope](object) with the [chockstone](object)
+      - combine the [key](object) with the [bridge](object)
+      - combine the [key](object) with the [locked bridge](object)
+      - use the [torch](object) on the [cave](object)
+      - use the [rope](object) on the [rock](object)
+      - use the [key](object) on the [bridge](object)
+      - use the [key](object) on the [locked bridge](object)
+      - use the [torch](object) with the [tree](object)
+      - use the [rope](object) with the [mountain](object)
+      - use the [key](object) with the [sand](object)
+      - use [torch](object) on [cave](object)
+      - use [rope](object) on [chockstone](object)
+      - use [key](object) on [bridge](object)
+      - use [key](object) on [locked bridge](object)
+      - use [torch](object) on [tree](object)
+      - use [rope](object) on [rock](object)
+      - use [key](object) on [sand](object)
+      - unite the [torch](object) with the [cave](object)
+      - unite the [rope](object) with the [chockstone](object)
+      - unite the [key](object) with the [bridge](object)
+      - unite the [key](object) with the [locked bridge](object)
+      - open the [bridge](object) with the [key](object)
+      - open the [key](object) with the [locked bridge](object)
+      - unite the [torch](object) with the [tree](object)
+      - unite the [rope](object) with the [rock](object)
+      - unite the [key](object) with the [sand](object)
+      - use the [torch](object) on the [cave](object)
+      - use the [cave](object)
+      - open the [cave](object)
+      - mix [cave](object) with the [torch](object)
+      - mix [rope](object) with the [rock](object)
+      - mix [key](object) with the [bridge](object)
+      - mix [key](object) with the [locked bridge](object)
+      - mix [tree](object) with the [torch](object)
+      - mix [rock](object) with the [rope](object)
+      - mix [key](object) with the [sand](object)
+      - use the [torch](object) on the [cave](object)
+      - throw the [rope](object) on the [mountain](object)
+      - throw the [rope](object) on the [mountains](object)
+      - turnon the [torch](object) in the [cave](object)
+      - switch on the [torch](object) in the [cave](object)
+  - intent: inventory
+    examples: |
+      - show inventory
+      - what is in my inventory
+      - what items do i currently have
+      - what have i picked up so far
+      - check inventory
+      - check my inventory
+      - look at the inventory
+      - Where do I find my inventory?
+      - show me inventory
+      - what items do i have
+      - what do i have
+      - what item i have
+
+
+  - intent: question_answer
+    examples: |
+      - Shadow
+      - Energy
+      - Memory
+      - Time
+      - Fish
+      - Desert
+      - Asteroid
+      - Star
+      - Pearl
+      - Dewdrop
+      - Foam
+      - Waves
+
+
+  - intent: help
+    examples: |
+      - help
+      - how does this game work
+      - what commands can i use
+      - how does this work?
+      - please help me
+      - i do not understand this
+      - what can i do?
+      - where am i
+      - I found the cardboard [box](object), can I open it?
+      - how do I find the [door](object)?
+
+  - intent: hint
+    examples: |
+      - can i get a hint?
+      - hint please
+      - I'm stuck
+      - give me a hint
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - lookup: object
+    examples: |
+      - tree
+      - trees
+      - forest
+      - cave
+      - caves
+      - burrow
+      - burrows
+      - rock
+      - rocks
+      - chockstone
+      - chockstones
+      - shadow
+      - mountain
+      - mountains
+      - river
+      - bridge
+      - locked bridge
+      - sand
+      - shell
+      - shells
+      - key
+      - torch
+      - rope
+      - sword
