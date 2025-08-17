@@ -1,4 +1,4 @@
 /models
 .DS_Store
 __pycache__/
-rasa/
+.rasa/
