@@ -37,7 +37,7 @@ uv pip install rasa-pro
 ```
 ### 4. Setup liscence key and check the version
 ```bash
-uv pip install rasa-pro
+export RASA_PRO_LICENSE=YOUR_LICENSE_KEY
 rasa --version
 ```
 ### 5. Run train command to create model in the /Models directory and start playing
@@ -46,4 +46,3 @@ rasa train
 rasa shell
 ```
 
-export RASA_PRO_LICENSE=YOUR_LICENSE_KEY
