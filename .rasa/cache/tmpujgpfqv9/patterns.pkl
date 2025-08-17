@@ -1,6 +1,0 @@
-[
-  {
-    "name": "object",
-    "pattern": "(\\btree\\b|\\btrees\\b|\\bforest\\b|\\bcave\\b|\\bcaves\\b|\\bburrow\\b|\\bburrows\\b|\\brock\\b|\\brocks\\b|\\bchockstone\\b|\\bchockstones\\b|\\bshadow\\b|\\bmountain\\b|\\bmountains\\b|\\briver\\b|\\bbridge\\b|\\blocked\\ bridge\\b|\\bsand\\b|\\bshell\\b|\\bshells\\b|\\bkey\\b|\\btorch\\b|\\brope\\b|\\bsword\\b)"
-  }
-]
