@@ -3,8 +3,6 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
 
- 
-print("1")
 look_descriptions = {
     "tree": """ETHAN: Now look into the tree trunk 🌴. Inside, you'll find a survival tool 1.
                To grab it, you have to solve question 1:
@@ -106,9 +104,6 @@ look_descriptions = {
 
 }
 
-print("2")
-
-
 class ActionLook(Action):
     def name(self) -> Text:
         return "action_look"
@@ -133,55 +128,6 @@ class ActionLook(Action):
             dispatcher.utter_message(text="Could you repeat what you're trying to look at?")
             print("5")
         return []
-
-print("6")
-
-# class AnswerCheckAction(Action):
-#     def name(self) -> Text:
-#         return "action_check_answer"
-#
-#     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#         # Retrieve user's answer for question 1 and question 2
-#         answer1 = tracker.latest_message.get('text')
-#         answer2 = tracker.latest_message.get('text')
-#         answer3 = tracker.latest_message.get('text')
-#         # Retrieve the correct answers for question 1 and question 2
-#         correct_answer1 = "Shadow"
-#         correct_answer2 = "asteroid"
-#         correct_answer3 = "waves"
-#
-#         # Check if the user provided an answer for question 1
-#         if answer1:
-#             if answer1.lower() == correct_answer1.lower():
-#                 dispatcher.utter_message(text="Correct! You have unlocked a survival tool 1 torch. Now  pick the "
-#                                                "torch to put  into your bag.")
-#             else:
-#                 dispatcher.utter_message(text="Wrong answer! Please try again.")
-#             return []
-#
-#         # Check if the user provided an answer for question 2
-#         if answer2:
-#             if answer2.lower() == correct_answer2.lower():
-#                 dispatcher.utter_message(text="Correct! You have unlocked a survival tool 2 rope. Now u pick the"
-#                                               "rope to put  into your bag")
-#             else:
-#                 dispatcher.utter_message(text="Incorrect answer. Please try again.")
-#             return []
-#
-#         if answer3:
-#             if answer3.lower() == correct_answer3.lower():
-#                 dispatcher.utter_message(text="Correct! You have unlocked a survival tool 3 key. Now u pick the "
-#                                                           "key to put  into your bag.")
-#             else:
-#                 dispatcher.utter_message(text="Incorrect answer. Please try again.")
-#             return []
-#
-#
-#         # If no answer provided, prompt the user to choose an option
-#         dispatcher.utter_message(text="Please choose one of the 4  options.")
-#
-#         return []
-
 
 class AnswerCheckAction(Action):
     def name(self) -> Text:
@@ -275,8 +221,6 @@ combinations = {
     ('torch', 'tree'): "Why put the torch back in the tree? You've just picked it up!",
 
     ('rope', 'mountain'): "Great! You successfully used the rope to climb the mountain. Welcome to level 3! Infront of you there is the deepest river with deadly predators in it and on the banks of river there is sand and shells on it. Fortunately there is bridge on it but it is locked, Take a close look at each object around you",
-
-    ('rope', 'mountain'): "Great! You successfully used the rope to climb the mountain. Welcome to level 3! Infront of you there is the deepest river with deadly predators in it and on the banks of river there is sand and shells on it. Fortunately there is bridge on it but it is locked, Take a close look at each object around you ",
 
     ('rope', 'rock'): "Why put the rope back in the rock? It's probably super useful.",
 
